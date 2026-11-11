@@ -242,6 +242,9 @@ With that, you're ready to begin:
 
 - _Q.1._ How does the process of creating a new branch and committing changes differ between the local and remote environments? Which step is missing in the online process?
 
+The online does all the steps in one go and it does not need git add?
+
+
 ### 3. Create a Pull Request
 
 Now that you've implemented the requested feature on the remote repository, you can create a pull request to formally propose merging your feature branch into `main`.
@@ -280,9 +283,17 @@ It seems not everyone was informed that you were in charge of the drone list and
 Now, without casting blame around, it would be helpful to understand how the healthy reference branch (`main`) ended up with two files for the same list.
 
 - _Q.2._ Who was first to add the list to `main`?
+
+Alice was first. 
+
 - _Q.3._ What did you do wrong, if anything?
+
+
+I should have checked whether somebody else has push anything by pulling before. 
+
 - _Q.4._ What did Alice do wrong, if anything?
 
+She did not look at the issue I opened and didnt pay attention to the lifecycle of feature development
 - _Discussion:_ How can such a situation be avoided?
 
 _Hints:_
