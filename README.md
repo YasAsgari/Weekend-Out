@@ -60,6 +60,7 @@ git log --oneline
 Get a feeling for the repository and its commit history. 
 - _Q.1._ What is the status of the repository after the commit? On which branch are you now?
 
+We are in branch feature/essentials and it says repo is clean
 
 Play around with the log command to see the commit history in different formats.
 Check the man page for an overview of the available options. Some examples are:
@@ -71,8 +72,15 @@ git log --oneline --since="2 days ago"
 ```
 
 - _Q.2._ What information is displayed for each commit?
+
+It shows the commit ID, who did it, and the message
+
 - _Q.3._ What is the commit hash and what is its purpose?
+
+It is a unique ID for that specific change 
 - _Q.4._ What's the difference between `git log` and `git reflog`?
+
+Log is used to see what is changing in the branches even those from the other branches. git reflog is for chekcing how the heads are changing
 
 Push the branch to the remote repository.
 
@@ -81,8 +89,17 @@ git push origin feature/essentials
 ```
 
 - _Q.5._ What does the `origin` refer to in the `git push` command? Hint: `git remote -v`.
+
+It is just default. But We can have multiple remotes that we can print with the hint command. 
+
 - _Q.6._ What would be the result of the `git push` command if you didn't specify the branch name? Think of a situation where you need to explicitly state the name of the remote and why this situation might be useful.
+
+It pushes to the remote of the current branch. 
+
 - _Q.7._ In which cases would it be useful to have multiple remote repositories?
+
+Working in companies?
+
 
 ### 2. Locally merge the feature branch into the main branch
 
