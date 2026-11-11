@@ -114,9 +114,22 @@ git pull origin main # or simply `git pull`
 
 Before you continue, think about the following questions:
 - _Q.8._ What is the purpose of the `git pull` command?
+To recieve the changes from the remote. If the information is not null, it also merges them to our current branch. 
+
 - _Q.9._ What is the difference between `git pull` and `git fetch`?
+
+pull: ftech + merge
 - _Q.10._ What would happen if you tried to push changes to a branch that has new commits on the remote repository? Try it out!
+
+Git will reject say you should pull
 - _Q.11._ What is the difference between `git pull origin main` and `git pull`?
+
+brings info from default origin to main. No idea about the second part. I used them similarly
+https://stackoverflow.com/questions/52108832/what-is-the-difference-between-git-pull-and-git-pull-origin-master
+
+* git pull origin master fetches commits from the master branch of the origin remote (into the local origin/master branch), and then it merges origin/master into the branch you currently have checked out.
+
+* git pull only works if the branch you have checked out is tracking an upstream branch. For example, if the branch you have checked out tracks origin/master, git pull is equivalent to git pull origin master
 
 Merge the `feature/essentials` branch into the main branch.
 
@@ -125,7 +138,12 @@ git merge feature/essentials
 ```
 
 - _Q.12._ How could you prevent a merge commit from being created when merging branches? Why would you want to do that?
+I would have rebased first. 
+
 - _Q.13._ What would have been the result if you had merged the `main` branch into the `feature/essentials` branch instead?
+
+It will show the same thing even if there is or there is no conflict but then the  `feature/essentials`  is updated. 
+
 
 ### 3. Resolve the merge conflict
 
