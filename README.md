@@ -194,7 +194,11 @@ git push
 Now the `feature/essentials` branch is merged into the main branch, and the conflict are resolved. The packing list is updated with the items from both branches.
 
 - _Q.14._ Which strategy would you have had to use to merge the feature branch into the main branch without creating a merge conflict?
+
+Probably rebase would be a good choice
 -  _Q.15_. Is avoiding a merge conflicts generally a good strategy?
+ NO?
+
 
 ---
 ---
