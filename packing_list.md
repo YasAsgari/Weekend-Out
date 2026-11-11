@@ -4,3 +4,5 @@
 - [ ] hiking boots
 - [ ] water bottle
 - [ ] sleeping pad
+- [ ] Rubber Duck
+- [ ] Lip balm
