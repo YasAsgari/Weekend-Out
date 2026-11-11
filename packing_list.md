@@ -5,3 +5,5 @@
 - [ ] water bottle
 - [ ] sleeping pad
 - [ ] extrawarm blanket
+- [ ] Rubber Duck
+- [ ] Lip balm
